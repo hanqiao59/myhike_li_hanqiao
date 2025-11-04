@@ -1,1 +1,80 @@
+/*
+* --------------------------------------------
+* Custom styles to override the default Bootstrap ones
+* --------------------------------------------
+*/
 
+/* New Color Palette:
+* Lightest (Text):         #E1F0C4    (text, contrast with dark)
+* Dark Green (Primary):    #29463E      
+* Light Green (Secondary): #6BAB90    (canvas background)
+* Dark Purple (Accent):    #5E4C5A
+*/
+
+.bg-info {
+  background-color: #6bab90 !important; /* Light green for secondary backgrounds */
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link {
+  color: #29463e; /* Dark green for brand name & nav links for visibility */
+}
+
+.btn-info {
+  color: #e1f0c4; /* Lightest shade for text on info button for contrast */
+  background-color: #6bab90; /* Light green for button background */
+  border-color: #6bab90; /* Dark green for button border */
+}
+
+.btn-primary {
+  color: #e1f0c4; /* Lightest shade for text */
+  font-size: 150%;
+  background-color: #29463e; /* Dark green for primary button background */
+  border-width: thick;
+}
+
+.btn-info:hover {
+  background-color: #5e4c5a;
+  color: white;
+  border-color: #5e4c5a;
+}
+
+.btn-primary:hover {
+  background-color: #5e4c5a;
+  color: white;
+  border-color: #5e4c5a;
+}
+
+body {
+  background-color: #e1f0c4; /* Lightest shade for body background to follow the 60% rule */
+}
+
+.navbar-brand {
+  font-family: "Montserrat", cursive;
+  font-size: 2rem;
+}
+
+.material-icons.md-18 {
+  font-size: 18px;
+}
+.material-icons.md-24 {
+  font-size: 24px;
+}
+.material-icons.md-36 {
+  font-size: 36px;
+}
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+/* Add CSS styles for the card container with vertical scrolling */
+#reviewsContainer .card-container {
+  max-height: 350px; /* Adjust the maximum height as needed */
+  overflow-y: auto;
+}
+
+/* Style the individual cards as needed */
+#reviewsContainer .card {
+  width: 45%; /* Adjust the width as per your design, leaving a little space for margins */
+  margin: 2%; /* Add margin between cards */
+}

@@ -128,9 +128,11 @@ async function displayCardsDynamically() {
       newcard.querySelector(".card-text").textContent =
         hike.details || `Located in ${hike.city}.`;
       newcard.querySelector(".card-length").textContent = hike.length;
+
       newcard.querySelector(
         ".read-more"
       ).href = `eachHike.html?docID=${doc.id}`;
+
       // 👇 ADD THIS LINE TO SET THE IMAGE SOURCE
       newcard.querySelector(".card-image").src = `./images/${hike.code}.jpg`;
 
