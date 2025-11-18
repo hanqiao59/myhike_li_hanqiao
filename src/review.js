@@ -7,6 +7,7 @@ import {
   addDoc,
   serverTimestamp,
 } from "firebase/firestore";
+
 //-----------------------------------------------------------
 // Get hike ID from Local Storage
 // Go to firestore to get the name of the hike (using this ID)
@@ -130,8 +131,10 @@ async function writeReview() {
       //window.location.href = "thanks.html"; // redirect to thank-you page
 
       // 🎉 Optional: Show thank-you modal instead of redirect
-      //const thankYouModal = new bootstrap.Modal(document.getElementById("thankYouModal"));
-      //thankYouModal.show();
+      const thankYouModal = new bootstrap.Modal(
+        document.getElementById("thankYouModal")
+      );
+      thankYouModal.show();
     } catch (error) {
       console.error("Error adding review:", error);
     }
